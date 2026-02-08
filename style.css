@@ -20,3 +20,26 @@ a {
 .negrito {
     font-weight: bold;
 }
+
+/* Seletores intermediários */
+
+/* Todo elemento 'a' que vier logo depois de um elemento 'p' terá as seguintes regras (adjacente) */
+p + a {
+    font-weight: bold;
+    color: orange;
+}
+
+/* Todo elemento 'a' que vier depois de um elemento 'p' terás essas regras (irmão)*/
+p ~ a {
+    color: red;
+}
+
+/* Todo elemento filho terá essas regras */
+p > a {
+    color: purple;
+}
+
+/* Todo elemento dentro da 'div' que não é filho terá essas regras */
+div a {
+    color: brown;
+}
