@@ -1,4 +1,22 @@
+/* Seletor universal, para todos os elementos. Quem não tiver regra, segue essas regras. */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Terceira forma de estilizar */
 p {
     color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: green;
+}
+
+#paragrafo2 {
+    font-weight: bold;
+}
+
+.negrito {
+    font-weight: bold;
 }
