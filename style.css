@@ -1,17 +1,45 @@
-body {
-    padding: 20px;
+/* Seletor universal, para todos os elementos. Quem não tiver regra, segue essas regras. */
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Se na Alura tivessem ensinado dessa forma teria sido mais fácil fazer os portfolios */
-.imagem-flutuante {
-    float: left;
-    width: 100px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+/* Terceira forma de estilizar */
+p {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* a propriedade clear ignora a propriedade float (passa o elemento pra baixo) */
-.subtitulo {
-    clear: both;
+a {
+    color: green;
+}
+
+#paragrafo2 {
+    font-weight: bold;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+/* Seletores intermediários */
+
+/* Todo elemento 'a' que vier logo depois de um elemento 'p' terá as seguintes regras (adjacente) */
+p + a {
+    font-weight: bold;
+    color: orange;
+}
+
+/* Todo elemento 'a' que vier depois de um elemento 'p' terás essas regras (irmão)*/
+p ~ a {
+    color: red;
+}
+
+/* Todo elemento filho terá essas regras */
+p > a {
+    color: purple;
+}
+
+/* Todo elemento dentro da 'div' que não é filho terá essas regras */
+div a {
+    color: brown;
 }
